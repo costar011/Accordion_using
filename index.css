@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo:wght@600&family=Lora:ital,wght@1,500&family=Merriweather:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background: #10192b;
+}
+
+.container {}
