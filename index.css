@@ -16,3 +16,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.accordion {
+    width: 350px;
+    height: 80vh;
+}
+
+.tab {
+    width: 100%;
+    position: relative;
+}
+
+.tab__button {
+    background: #1b243c4f;
+
+    width: 100%;
+    border: none;
+    text-align: start;
+    padding: 10px 10px;
+
+    cursor: pointer;
+}
