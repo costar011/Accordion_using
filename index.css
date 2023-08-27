@@ -43,3 +43,17 @@ body {
     overflow: hidden;
     border-radius: 5px;
 }
+
+.tab__button::before , .tab__panel::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background: #373b44;
+    background: -webkit-linear-gradient(to right, #4286f4, #373b44);
+    background: linear-gradient(to right, #4286f4, #373b44);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(30px);
+}
