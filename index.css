@@ -47,13 +47,33 @@ body {
 .tab__button::before , .tab__panel::before {
     content: '';
     position: absolute;
+
     width: 30%;
     height: 100%;
+
     background: #373b44;
     background: -webkit-linear-gradient(to right, #4286f4, #373b44);
     background: linear-gradient(to right, #4286f4, #373b44);
+
     top: 0;
     right: 0;
     z-index: -1;
     filter: blur(30px);
+}
+
+.tab__button::after {
+    content: '\f0d7';
+
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    color: rgba(255 , 255, 255, 0.616);
+    transition: transform 0.8s;
+}
+
+.tab__button-active::after {
+    transform: translate(0, -50%) rotate(-180deg);
 }
