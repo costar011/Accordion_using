@@ -77,3 +77,32 @@ body {
 .tab__button-active::after {
     transform: translate(0, -50%) rotate(-180deg);
 }
+
+.tab__panel {
+    width: 95%;
+    margin: 10px auto;
+    background: #1b243c4f;
+    z-index: -1;
+
+    color: rgba(255 , 255, 255, 0.616);
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    height: 0;
+
+    overflow: hidden;
+    transition: height 0.8s, padding 0.8s;
+}
+
+.tab__panel::before {
+    background: -webkit-linear-gradient(to right, #4286f475, #373b44);
+    background: linear-gradient(to right, #4286f469, #373b44);
+}
+
+.tab__panel-active {
+    transition: height 0.8s, padding 0.8s;
+    padding: 20px 20px 10px 20px;
+}
+
+.tab__panel p {
+    word-break: break-all;
+}
